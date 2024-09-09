@@ -6,6 +6,7 @@ function customerRender(reactElement, container){
     domElement.setAttribute('target', reactElement.props.href)
     container.appendChild(domElement)
     */
+   // custom render method
    const domElement = document.createElement(reactElement.type)
    domElement.innerHTML = reactElement.children
    for (const prop in reactElement.props) {
